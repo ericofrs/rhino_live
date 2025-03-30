@@ -4,20 +4,7 @@ FROM rocker/shiny:4.3.2
 
 # Install dependencies and utilities
 RUN apt-get update && apt-get install -y \
-    libcurl4-gnutls-dev \
-    libssl-dev \
-    libxml2-dev \
-    libpq-dev \
-    unixodbc-dev \
-    gnupg2 \
-    apt-transport-https \
-    curl \
-    libsodium-dev \
-    python3 \
-    python3-pip \
-    python3-venv \
-    python3-dev \
-    glpk-utils  
+    libcurl4-gnutls-dev 
     
     # Install Node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
