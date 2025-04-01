@@ -8,7 +8,7 @@ ui <- function(id) {
   ns <- NS(id)
   
   fluidPage(
-    titlePanel("Hello Rhino!"),
+    titlePanel("Hello Rhino! I did a change to commit again."),
     sidebarLayout(
       sidebarPanel(
         textInput(ns("name"), "Your name:", "World")
